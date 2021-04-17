@@ -1,0 +1,34 @@
+.switch {
+  &__light {
+    border: 1px solid #000;
+    background-color: transparent;
+    margin-top: 2rem;
+    border-radius: 100px;
+    cursor: pointer;
+    padding: 1rem 1.2rem;
+  }
+  &__lang__fr,
+  &__lang__en,
+  &__lang__es {
+    border: 1px solid #000;
+    background-color: transparent;
+    margin-top: 2rem;
+    border-radius: 100px;
+    cursor: pointer;
+    padding: 1rem 1rem;
+  }
+}
+.white-border {
+  border: 1px solid #ffff00;
+  color: #ffff00;
+}
+
+.selected {
+  background-color: #000;
+  color: #fff;
+}
+
+.selected-dark {
+  background-color: #ffff00;
+  color: #000;
+}
