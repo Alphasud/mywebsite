@@ -37,6 +37,33 @@ const data = [
   },
 ];
 
+const occupation = [
+  {
+    french: [
+      {
+        text: 'Lorem Ipsum en Francais',
+        textother: '',
+      },
+    ],
+  },
+  {
+    english: [
+      {
+        text: 'Lorem Ipsum in English',
+        textother: '',
+      },
+    ],
+  },
+  {
+    spanish: [
+      {
+        text: 'Lorem Ipsum en Español',
+        textother: '',
+      },
+    ],
+  },
+];
+
 const projects = [
   {
     french: [
@@ -190,4 +217,4 @@ const projects = [
   },
 ];
 
-export { data, projects };
+export { data, occupation, projects };

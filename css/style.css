@@ -70,26 +70,29 @@ body {
 }
 .switch__lang__fr, .switch__lang__en, .switch__lang__es {
   border: 1px solid #000;
-  background-color: transparent;
+  background-color: #000;
+  color: #fff;
   margin-top: 2rem;
+  margin-left: 1rem;
   border-radius: 100px;
   cursor: pointer;
   padding: 1rem 1rem;
+  transform: rotate(-180deg);
+  transition: transform 0.2s ease;
+}
+
+.yellow-border {
+  border: 1px solid #ffff00;
 }
 
 .white-border {
-  border: 1px solid #ffff00;
-  color: #ffff00;
-}
-
-.selected {
-  background-color: #000;
+  border: 1px solid #fff;
   color: #fff;
 }
 
-.selected-dark {
-  background-color: #ffff00;
-  color: #000;
+.selected {
+  font-weight: 700;
+  transform: rotate(0deg) scale(1.2);
 }
 
 main {
@@ -97,8 +100,23 @@ main {
   flex-direction: column;
 }
 
+.top {
+  display: flex;
+}
+
+.occupation {
+  margin-left: 1rem;
+  margin-top: 2rem;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 50%;
+  transition: background-color 0.25s ease-in;
+}
+
 .presentation {
-  margin-right: 0.5rem;
+  margin-right: 1rem;
   margin-top: 2rem;
   background-color: transparent;
   border: 1px solid black;
@@ -158,14 +176,15 @@ main {
   text-align: center;
   font-style: italic;
   line-height: 1.5;
+  margin-bottom: 1rem;
 }
 .projects__elements__item__techno {
   height: 2rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
-.projects__elements__item h2 {
-  height: 5rem;
+.projects__elements__item__title {
+  height: 4rem;
 }
 .projects__elements__item__link {
   border: 2px solid currentColor;
