@@ -12,6 +12,12 @@ class PresentationCard {
                 <h2 class='presentation__top__right__tagline'>${element.tagline}</h2>
             </div>
         </div>
+        <div class='presentation__social'>
+          <a class='presentation__social__mail'><i class="fas fa-envelope fa-2x"></i></a>
+          <a href="${element.github}"><i class="fab fa-github fa-2x"></i></a>
+          <a href="${element.linkedin}"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+        <span class='copy-message'>${element.message}</span>
         <p class='presentation__description'>${element.description}</p>
             `;
       });

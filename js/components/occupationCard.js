@@ -5,7 +5,7 @@ class OccupationCard {
         return `
         <div class='occupation__top'>
             <h1>${element.text}</h1>
-            <h2>${element.text}?</h2>
+            <p>${element.textother}</p>
         </div>
             `;
       });

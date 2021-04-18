@@ -6,8 +6,12 @@ const data = [
         name: 'Charles',
         fName: 'Denneulin',
         tagline: 'Développeur Front-End Junior',
-        description: `Actuellement en formation Développeur Front-end avec <a class="presentation__link" href="">OpenClassroom</a>.<br>A la recherche d'une alternance cette année (pour ma formation OpenClassroom) ou pour l'année d'après avec l'ENI. Je suis extrêmement motivé par la perspective de pouvoir progresser au côté de développeur-euse-s chevronné-e-s et dans un environnement technologique stimulant.`,
+        description: `A la recherche d'une alternance ou d'un poste junior. Je suis motivé par la perspective de pouvoir progresser au côté de développeur-euse-s chevronné-e-s et dans un environnement technologique stimulant.`,
         photo: './picture.png',
+        mail: 'c.denneulin@gmail.com',
+        github: 'https://github.com/Alphasud',
+        linkedin: 'https://www.linkedin.com/in/charlesdenneulin/',
+        message: 'Adresse mail copiée dans le presse-papier !',
       },
     ],
   },
@@ -18,8 +22,12 @@ const data = [
         name: 'Charles',
         fName: 'Denneulin',
         tagline: 'Junior Front-End Web Developper',
-        description: `Now learning on <a class="presentation__link" href="">OpenClassroom</a>. Illum sed optio dolor assumenda soluta ipsa quae accusantium vitae minus. Illum sed optio dolor assumenda soluta ipsa quae accusantium vitae minus.`,
+        description: `Looking for an apprenticeship or a junior position. I am thrilled by the idea of working and learning amongst seasoned developpers in a stimulating environement.`,
         photo: './picture.png',
+        mail: 'c.denneulin@gmail.com',
+        github: 'https://github.com/Alphasud',
+        linkedin: 'https://www.linkedin.com/in/charlesdenneulin/',
+        message: 'Mail address copied in clipboard !',
       },
     ],
   },
@@ -30,8 +38,12 @@ const data = [
         name: 'Charles',
         fName: 'Denneulin',
         tagline: 'Desarollador Front-End Junior',
-        description: `Ahora estudiando sobre la plataforma <a class="presentation__link" href="">OpenClassroom</a>. Illum sed optio dolor assumenda soluta ipsa quae accusantium vitae minus. Illum sed optio dolor assumenda soluta ipsa quae accusantium vitae minus.`,
+        description: `Buscando por una formación en alternancia o un puesto junior. Estoy motivado para la idea de trabajar y apprender con desarollador-es experto-s en una atmósfera estimulante.`,
         photo: './picture.png',
+        mail: 'c.denneulin@gmail.com',
+        github: 'https://github.com/Alphasud',
+        linkedin: 'https://www.linkedin.com/in/charlesdenneulin/',
+        message: 'Dirección de correo copiada en el portapapeles !',
       },
     ],
   },
@@ -41,24 +53,26 @@ const occupation = [
   {
     french: [
       {
-        text: 'Lorem Ipsum en Francais',
-        textother: '',
+        text: 'Depuis janvier 2021',
+        textother: `En formation avec <a class="occupation__linkOC" href="https://openclassrooms.com/fr/">OpenClassroom</a> sur le parcour <a class="occupation__linkProgr" href="https://openclassrooms.com/fr/paths/314-developpeur-front-end">Développeur Front-End</a>.<br>`,
       },
     ],
   },
   {
     english: [
       {
-        text: 'Lorem Ipsum in English',
-        textother: '',
+        text: 'Since january 2021 :',
+        textother:
+          'Training with <a class="occupation__linkOC" href="https://openclassrooms.com/en/">OpenClassroom</a> on the <a class="occupation__linkProgr" href="https://openclassrooms.com/en/paths/315-front-end-developer">Front-End developper</a> training program.',
       },
     ],
   },
   {
     spanish: [
       {
-        text: 'Lorem Ipsum en Español',
-        textother: '',
+        text: 'Desde enero 2021 :',
+        textother:
+          'En formación con <a class="occupation__linkOC" href="https://openclassrooms.com/en/">OpenClassroom</a> en la cualificación de <a class="occupation__linkProgr" href="https://openclassrooms.com/en/paths/315-front-end-developer">desarollador Front-End</a>.',
       },
     ],
   },

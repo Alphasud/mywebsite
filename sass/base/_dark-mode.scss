@@ -1,18 +1,16 @@
 .dark {
-  background-color: #000;
-  color: #fff;
+  background-color: $dark;
+  color: $light;
 }
 .dark-bulb {
-  color: #ffff00;
+  color: $yellow;
 }
-.dark-link {
-  color: #ffff00;
-}
+
 .dark-pres {
-  background-color: #000000 !important;
-  border: 1px solid #ffff00 !important;
+  background-color: $dark !important;
+  border: 1px solid $yellow !important;
 }
 .dark-links {
-  border: 2px solid #ffff00 !important;
-  color: #ffff00 !important;
+  border: 2px solid $yellow !important;
+  color: $yellow !important;
 }
