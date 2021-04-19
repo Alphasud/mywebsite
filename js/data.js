@@ -54,7 +54,7 @@ const occupation = [
     french: [
       {
         text: 'Depuis janvier 2021',
-        textother: `En formation avec <a class="occupation__linkOC" href="https://openclassrooms.com/fr/">OpenClassroom</a> sur le parcour <a class="occupation__linkProgr" href="https://openclassrooms.com/fr/paths/314-developpeur-front-end">Développeur Front-End</a>.<br>`,
+        textother: `En formation avec <a class="occupation__linkOC" href="https://openclassrooms.com/fr/" target="_blank" rel="noopener noreferrer">OpenClassroom</a> sur le parcour <a class="occupation__linkProgr" href="https://openclassrooms.com/fr/paths/314-developpeur-front-end" target="_blank" rel="noopener noreferrer">Développeur Front-End</a>.<br>`,
       },
     ],
   },
@@ -63,7 +63,7 @@ const occupation = [
       {
         text: 'Since january 2021 :',
         textother:
-          'Training with <a class="occupation__linkOC" href="https://openclassrooms.com/en/">OpenClassroom</a> on the <a class="occupation__linkProgr" href="https://openclassrooms.com/en/paths/315-front-end-developer">Front-End developper</a> training program.',
+          'Training with <a class="occupation__linkOC" href="https://openclassrooms.com/en/" target="_blank" rel="noopener noreferrer">OpenClassroom</a> on the <a class="occupation__linkProgr" href="https://openclassrooms.com/en/paths/315-front-end-developer" target="_blank" rel="noopener noreferrer">Front-End developper</a> training program.',
       },
     ],
   },
@@ -72,7 +72,7 @@ const occupation = [
       {
         text: 'Desde enero 2021 :',
         textother:
-          'En formación con <a class="occupation__linkOC" href="https://openclassrooms.com/en/">OpenClassroom</a> en la cualificación de <a class="occupation__linkProgr" href="https://openclassrooms.com/en/paths/315-front-end-developer">desarollador Front-End</a>.',
+          'En formación con <a class="occupation__linkOC" href="https://openclassrooms.com/en/" target="_blank" rel="noopener noreferrer">OpenClassroom</a> en la cualificación de <a class="occupation__linkProgr" href="https://openclassrooms.com/en/paths/315-front-end-developer" target="_blank" rel="noopener noreferrer">desarollador Front-End</a>.',
       },
     ],
   },
