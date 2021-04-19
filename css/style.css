@@ -336,8 +336,17 @@ main {
     margin-bottom: 1rem;
   }
 
+  .presentation__social {
+    width: 100%;
+    justify-content: center;
+  }
+  .presentation__social a:first-child {
+    margin-left: 0;
+  }
+
   .copy-message {
     width: 100%;
+    text-align: center;
   }
 }
 
