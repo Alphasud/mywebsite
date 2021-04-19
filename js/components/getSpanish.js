@@ -25,6 +25,8 @@ function getSpanish(data, projects, occupation) {
   occupationArea.innerHTML = occup;
 
   /////PROJECTS
+  const projectTitle = document.querySelector('.projects__title');
+  projectTitle.innerHTML = 'Proyectos Academicos';
   const projectCard = new ProjectCard();
   const projectDataSpanFiltered = projects.filter((element) => element.spanish);
   const projectSpan = projectDataSpanFiltered.flatMap(

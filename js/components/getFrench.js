@@ -26,6 +26,8 @@ function getFrench(data, projects, occupation) {
   occupationArea.innerHTML = occup;
 
   //////PROJECTS//////
+  const projectTitle = document.querySelector('.projects__title');
+  projectTitle.innerHTML = 'Projets Académiques';
   const projectArea = document.querySelector('.projects__elements');
   const projectCard = new ProjectCard();
   const projectDataFrenchFiltered = projects.filter(

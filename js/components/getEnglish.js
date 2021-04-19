@@ -22,6 +22,8 @@ function getEnglish(data, projects, occupation) {
   occupationArea.innerHTML = occup;
 
   /////PROJECT
+  const projectTitle = document.querySelector('.projects__title');
+  projectTitle.innerHTML = 'Training Projects';
   const projectCard = new ProjectCard();
   const projectDataEngFiltered = projects.filter((element) => element.english);
   const projectEng = projectDataEngFiltered.flatMap(

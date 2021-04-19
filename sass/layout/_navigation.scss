@@ -26,6 +26,9 @@ main {
   border-radius: 10px;
   padding: 1rem;
   transition: background-color 0.25s ease-in;
+  &__top {
+    margin-top: 3rem;
+  }
   &__linkOC {
     transition: color 0.5s ease-in;
   }
@@ -98,13 +101,17 @@ main {
 }
 
 .projects {
-  margin-top: 2rem;
+  margin: 2rem 0;
   background-color: transparent;
   border: 1px solid $dark;
   border-radius: 10px;
   padding: 1rem;
   width: 100%;
   transition: background-color 0.25s ease-in;
+
+  &__title {
+    margin: 0 0 1rem 1rem;
+  }
 
   &__elements {
     display: flex;
@@ -113,7 +120,7 @@ main {
     margin: 0 auto;
 
     &__item {
-      height: 45rem;
+      height: 50rem;
       display: flex;
       align-items: center;
       flex-basis: 30%;
@@ -132,7 +139,8 @@ main {
       }
 
       &__techno {
-        height: 2rem;
+        text-align: center;
+        height: auto;
         font-weight: 700;
         margin-bottom: 1rem;
       }
