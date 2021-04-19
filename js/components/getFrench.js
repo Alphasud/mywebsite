@@ -37,7 +37,7 @@ function getFrench(data, projects, occupation) {
     (element) => element.french
   );
   let projectElement = projectCard.createProjectCard(projectFrench);
-  projectArea.insertAdjacentHTML('beforeend', projectElement);
+  projectArea.innerHTML = projectElement;
 
   ///// COPY MAIL TO CLIPBOARD AND DISPLAY MESSAGE////
   let mail = document.querySelectorAll('.presentation__social__mail');
