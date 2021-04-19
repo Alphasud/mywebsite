@@ -97,6 +97,12 @@ body {
   transform: rotate(0deg) scale(1.2);
 }
 
+@media screen and (max-width: 900px) {
+  .header {
+    display: flex;
+    justify-content: center;
+  }
+}
 main {
   display: flex;
   flex-direction: column;
@@ -312,6 +318,25 @@ main {
   .occupation,
 .presentation {
     flex-basis: 100%;
+  }
+
+  .occupation__top {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  .presentation__top {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .presentation__top__right {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .copy-message {
+    width: 100%;
   }
 }
 

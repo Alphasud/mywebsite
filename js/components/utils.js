@@ -4,7 +4,7 @@ function mailManagement(mail, message) {
       e.preventDefault();
       navigator.clipboard.writeText('c.denneulin@gmail.com');
       message.forEach((element) => (element.style.opacity = '1'));
-      message.forEach((element) => (element.style.height = '3.5rem'));
+      message.forEach((element) => (element.style.height = 'auto'));
       setTimeout(function () {
         message.forEach((element) => (element.style.opacity = '0'));
         message.forEach((element) => (element.style.height = '0'));
