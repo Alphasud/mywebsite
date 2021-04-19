@@ -57,3 +57,14 @@ toggleLangEs.addEventListener('click', () => {
   toggleLangFr.classList.remove('selected');
   getSpanish(data, projects, occupation);
 });
+
+//////FOOTER//////
+const footer = document.querySelector('.footer');
+footer.insertAdjacentHTML(
+  'afterbegin',
+  `<p>Charles Denneulin, ${new Date().getFullYear()}.</p>`
+);
+footer.insertAdjacentHTML(
+  'beforeend',
+  '<a href="https://github.com/Alphasud/mywebsite">Source Code</a>'
+);
