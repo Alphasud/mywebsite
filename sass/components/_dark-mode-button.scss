@@ -7,6 +7,7 @@
     cursor: pointer;
     padding: 1rem 1.2rem;
   }
+
   &__lang__fr,
   &__lang__en,
   &__lang__es {
@@ -18,7 +19,7 @@
     border-radius: 100px;
     cursor: pointer;
     padding: 1rem 1rem;
-    transform: rotate(-180deg);
+    transform: rotate(-360deg);
     transition: transform 0.2s ease;
   }
 }

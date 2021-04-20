@@ -4,9 +4,9 @@ class ProjectCard {
       const dataDisplayed = data.map((element) => {
         return `
         <article class='projects__elements__item'>
-            <div class='projects__elements__item__image'>
+            <a href='${element.website}' class='projects__elements__item__image'target='_blank' rel='noopener noreferrer'>
             <img src='${element.photo}' alt='${element.title}'>
-            </div>
+            </a>
             <h2 class='projects__elements__item__title'>${element.title}</h2>
             <p class='projects__elements__item__techno'>${element.techno}</p>
             <p class='projects__elements__item__description'>${element.description}</p>

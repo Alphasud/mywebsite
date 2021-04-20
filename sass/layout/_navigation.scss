@@ -78,10 +78,11 @@ main {
     }
   }
   &__description {
-    margin-left: 1rem;
+    margin: 0 1rem;
+    text-align: justify;
+    text-justify: inter-word;
   }
   &__social {
-    // margin: 0 auto;
     width: 50%;
     display: flex;
     justify-content: flex-start;
@@ -126,9 +127,6 @@ main {
       flex-basis: 30%;
       flex-direction: column;
       margin: 1rem;
-      //border-radius: 15px;
-      //border: 1px solid black;
-      //box-shadow: 0.2rem 0.8rem 1rem rgba(0, 0, 0, 0.15);
 
       &__description {
         height: auto;
@@ -194,6 +192,10 @@ main {
         height: 20rem;
         overflow: hidden;
         margin-bottom: 1rem;
+        transition: transform 0.2s ease;
+        &:hover {
+          transform: scale(1.1);
+        }
 
         img {
           border: 2px solid $light;
@@ -234,6 +236,13 @@ main {
     margin-top: 0;
   }
 }
+@media screen and (max-width: 550px) {
+  .projects__elements__item {
+    flex-basis: 100%;
+    height: auto;
+  }
+}
+
 @media screen and (max-width: 450px) {
   .presentation__top {
     flex-direction: column;

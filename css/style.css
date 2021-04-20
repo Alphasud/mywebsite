@@ -80,7 +80,7 @@ body {
   border-radius: 100px;
   cursor: pointer;
   padding: 1rem 1rem;
-  transform: rotate(-180deg);
+  transform: rotate(-360deg);
   transition: transform 0.2s ease;
 }
 
@@ -181,7 +181,9 @@ main {
   line-height: 1.2;
 }
 .presentation__description {
-  margin-left: 1rem;
+  margin: 0 1rem;
+  text-align: justify;
+  text-justify: inter-word;
 }
 .presentation__social {
   width: 50%;
@@ -284,6 +286,10 @@ main {
   height: 20rem;
   overflow: hidden;
   margin-bottom: 1rem;
+  transition: transform 0.2s ease;
+}
+.projects__elements__item__image:hover {
+  transform: scale(1.1);
 }
 .projects__elements__item__image img {
   border: 2px solid #f1e9e9;
@@ -323,6 +329,12 @@ main {
 
   .occupation__top {
     margin-top: 0;
+  }
+}
+@media screen and (max-width: 550px) {
+  .projects__elements__item {
+    flex-basis: 100%;
+    height: auto;
   }
 }
 @media screen and (max-width: 450px) {
