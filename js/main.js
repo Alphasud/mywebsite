@@ -62,7 +62,7 @@ toggleLangEs.addEventListener('click', () => {
 const footer = document.querySelector('.footer');
 footer.insertAdjacentHTML(
   'afterbegin',
-  `<p>Charles Denneulin, ${new Date().getFullYear()}.</p>`
+  `<p>Charles Denneulin <i class="far fa-copyright fa-rotate-180"></i> ${new Date().getFullYear()}.</p>`
 );
 footer.insertAdjacentHTML(
   'beforeend',
