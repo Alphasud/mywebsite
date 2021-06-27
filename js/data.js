@@ -127,6 +127,15 @@ const projects = [
         website: 'https://alphasud.github.io/CharlesDenneulin_7_24032021/',
         sourcecode: 'https://github.com/Alphasud/CharlesDenneulin_7_24032021',
       },
+      {
+        id: '11',
+        title: 'Kasa',
+        description: `Intégration d'une maquette`,
+        techno: 'HTML5 / SCSS / ReactJS / ReactRouter',
+        photo: './img/projet7.png',
+        website: 'https://kasa-project.netlify.app/',
+        sourcecode: 'https://github.com/Alphasud/CharlesDenneulin_11_17062021',
+      },
     ],
   },
   {
@@ -177,6 +186,15 @@ const projects = [
         website: 'https://alphasud.github.io/CharlesDenneulin_7_24032021/',
         sourcecode: 'https://github.com/Alphasud/CharlesDenneulin_7_24032021',
       },
+      {
+        id: '11',
+        title: 'Kasa',
+        description: `Mockup integration`,
+        techno: 'HTML5 / SCSS / ReactJS / ReactRouter',
+        photo: './img/projet7.png',
+        website: 'https://kasa-project.netlify.app/',
+        sourcecode: 'https://github.com/Alphasud/CharlesDenneulin_11_17062021',
+      },
     ],
   },
   {
@@ -184,7 +202,7 @@ const projects = [
       {
         id: '2',
         title: 'Reservia',
-        description: `Intégration d'un maquette`,
+        description: `Integración de un diseño de página web`,
         techno: 'HTML5 / CSS',
         photo: './img/projet2.png',
         website: 'https://alphasud.github.io/CharlesDenneulin_2_12012021',
@@ -193,7 +211,7 @@ const projects = [
       {
         id: '3',
         title: 'ohmyfood',
-        description: `Intégration d'un maquette`,
+        description: `Integración de un diseño de página web`,
         techno: 'HTML5 / SCSS',
         photo: './img/projet3.png',
         website:
@@ -203,7 +221,7 @@ const projects = [
       {
         id: '4',
         title: 'GameOn',
-        description: `Intégration d'une maquette et validation de formulaire`,
+        description: `Integración de un diseño de página web y validación de un formulario`,
         techno: 'HTML5 / SCSS / Vanilla JS',
         photo: './img/projet4.png',
         website: 'https://alphasud.github.io/GameOn-website-FR',
@@ -212,7 +230,7 @@ const projects = [
       {
         id: '6',
         title: 'FishEye',
-        description: `Intégration d'une maquette, orientée accessibilité (aria),  plusieurs features: filter, form, lightbox, sort, like button.`,
+        description: `Integración de un diseño, accesibilidad (aria),  varios features: filter, form, lightbox, sort, botón de like.`,
         techno: 'HTML5 / SCSS / Vanilla JS / ARIA / ESLint',
         photo: './img/projet6.png',
         website: 'https://alphasud.github.io/CharlesDenneulin_6_18022021/',
@@ -221,11 +239,20 @@ const projects = [
       {
         id: '7',
         title: 'Les Petits Plats',
-        description: `Intégration d'une maquette, et d'un algorithme de recherche`,
+        description: `Integración de un diseño, y algoritmo de búsqueda`,
         techno: 'HTML5 / SCSS / Vanilla JS / ESlint',
         photo: './img/projet7.png',
         website: 'https://alphasud.github.io/CharlesDenneulin_7_24032021/',
         sourcecode: 'https://github.com/Alphasud/CharlesDenneulin_7_24032021',
+      },
+      {
+        id: '11',
+        title: 'Kasa',
+        description: `Integración de un diseño de página web`,
+        techno: 'HTML5 / SCSS / ReactJS / ReactRouter',
+        photo: './img/projet7.png',
+        website: 'https://kasa-project.netlify.app/',
+        sourcecode: 'https://github.com/Alphasud/CharlesDenneulin_11_17062021',
       },
     ],
   },
