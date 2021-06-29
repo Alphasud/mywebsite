@@ -168,6 +168,7 @@ main {
   height: 15rem;
   border-radius: 100px;
   object-fit: cover;
+  object-position: top;
 }
 .presentation__top__right__name {
   font-size: 3rem;
