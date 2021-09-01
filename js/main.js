@@ -7,7 +7,7 @@ const toggleLangFr = document.querySelector('.switch__lang__fr');
 toggleLangFr.classList.add('selected');
 const projectDiv = document.querySelector('.projects');
 
-getFrench(data, projects, occupation);
+getFrench(data, projects, occupation); // Basic display is French
 
 /////////DARK MODE MANAGEMENT/////////
 const toggleLight = document.querySelector('.switch__light');
@@ -32,7 +32,7 @@ toggleLight.addEventListener('click', () => {
   occupationArea.classList.toggle('dark-pres');
 });
 
-///////LANGUAGE SLECTION MANAGMEMENT////////
+///////LANGUAGE SELECTION MANAGMEMENT////////
 
 /////////FRENCH MANAGEMENT SECTION///////////
 toggleLangFr.addEventListener('click', () => {
