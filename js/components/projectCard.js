@@ -2,6 +2,8 @@ class ProjectCard {
   constructor() {
     this.createProjectCard = function (data) {
       const dataDisplayed = data.map((element) => {
+        let isWebsite;
+        element.website === 'none' ? isWebsite = false : isWebsite = true;
         return `
         <article class='projects__elements__item'>
             <a href='${element.website}' class='projects__elements__item__image'target='_blank' rel='noopener noreferrer'>
@@ -11,7 +13,7 @@ class ProjectCard {
             <p class='projects__elements__item__techno'>${element.techno}</p>
             <p class='projects__elements__item__description'>${element.description}</p>
             <a class='projects__elements__item__link' href='${element.sourcecode}' target='_blank' rel='noopener noreferrer'>Source Code</a>
-            <a class='projects__elements__item__link' href='${element.website}' target='_blank' rel='noopener noreferrer'>Website</a>
+            ${isWebsite ? `<a class='projects__elements__item__link' href='${element.website}' target='_blank' rel='noopener noreferrer'>Website</a>` : ``}
         </article>
             `;
       });
