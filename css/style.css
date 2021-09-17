@@ -245,7 +245,60 @@ main {
   margin-left: 1rem;
 }
 .presentation__social__mail {
+  margin-left: 2rem;
   cursor: pointer;
+}
+
+.contact {
+  display: none;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  justify-content: center;
+  width: 37.5%;
+  left: 31.25%;
+  top: 20%;
+  padding: 2rem;
+}
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  color: aliceblue;
+  width: 50rem;
+}
+.contact__form label {
+  margin-top: 1rem;
+  color: aliceblue;
+}
+.contact__form__close {
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+  background-color: transparent;
+  border: none;
+  color: aliceblue;
+  cursor: pointer;
+}
+.contact__form__email {
+  height: 2.5rem;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(240, 248, 255, 0.8);
+}
+.contact__form__message {
+  height: 20rem;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(240, 248, 255, 0.8);
+}
+.contact__form__button {
+  margin-top: 1rem;
+  width: 10rem;
+  background-color: rgba(240, 248, 255, 0.8);
+  border: none;
+  font-weight: 900;
+  border-radius: 5px;
+  padding: 0.5rem;
 }
 
 .projects {

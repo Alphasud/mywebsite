@@ -1,4 +1,4 @@
-import { data, projects, techno } from './data.js';
+import { data, projects, techno, contact } from './data.js';
 import { getFrench } from './components/getFrench.js';
 import { getEnglish } from './components/getEnglish.js';
 import { getSpanish } from './components/getSpanish.js';
@@ -7,7 +7,7 @@ const toggleLangFr = document.querySelector('.switch__lang__fr');
 toggleLangFr.classList.add('selected');
 const projectDiv = document.querySelector('.projects');
 
-getFrench(data, projects, techno); // Basic display is French
+getFrench(data, projects, techno, contact); // Basic display is French
 
 /////////DARK MODE MANAGEMENT/////////
 const toggleLight = document.querySelector('.switch__light');
@@ -39,7 +39,7 @@ toggleLangFr.addEventListener('click', () => {
   toggleLangFr.classList.add('selected');
   toggleLangEn.classList.remove('selected');
   toggleLangEs.classList.remove('selected');
-  getFrench(data, projects, techno);
+  getFrench(data, projects, techno, contact);
 });
 
 /////////ENGLISH MANAGEMENT SECTION///////////
@@ -47,7 +47,7 @@ toggleLangEn.addEventListener('click', () => {
   toggleLangEn.classList.add('selected');
   toggleLangFr.classList.remove('selected');
   toggleLangEs.classList.remove('selected');
-  getEnglish(data, projects, techno);
+  getEnglish(data, projects, techno, contact);
 });
 
 /////////SPANISH MANAGEMENT SECTION///////////
@@ -55,7 +55,7 @@ toggleLangEs.addEventListener('click', () => {
   toggleLangEs.classList.add('selected');
   toggleLangEn.classList.remove('selected');
   toggleLangFr.classList.remove('selected');
-  getSpanish(data, projects, techno);
+  getSpanish(data, projects, techno, contact);
 });
 
 //////FOOTER//////

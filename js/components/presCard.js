@@ -15,7 +15,7 @@ class PresentationCard {
         <div class='presentation__social'>
           <a class='resume-icon' href="${element.resume}" target="_blank" rel="noopener noreferrer"><i class="fas fa-scroll fa-2x"></i></a>
           <span class='resume-message'>${element.toolTip}</span>
-          <a class='presentation__social__mail'><i class="fas fa-envelope fa-2x"></i></a>
+          <span class='presentation__social__mail'><i class="fas fa-envelope fa-2x"></i></span>
           <a href="${element.github}" target="_blank" rel="noopener noreferrer"><i class="fab fa-github fa-2x"></i></a>
           <a href="${element.linkedin}" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin fa-2x"></i></a>
         </div>

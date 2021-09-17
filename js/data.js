@@ -85,6 +85,33 @@ const techno = [
   },
 ];
 
+const contact = [
+  {
+    french: [
+      {
+        email: 'Votre email',
+        message: 'Votre Message',
+      },
+    ],
+  },
+  {
+    english: [
+      {
+        email: 'Your email address',
+        message: 'Your message',
+      },
+    ],
+  },
+  {
+    spanish: [
+      {
+        email: 'Su correo electronico',
+        message: 'Su mensaje',
+      },
+    ],
+  },
+];
+
 const projects = [
   {
     french: [
@@ -427,4 +454,4 @@ const projects = [
   },
 ];
 
-export { data, techno, projects };
+export { data, techno, projects, contact };
