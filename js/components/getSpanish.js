@@ -3,7 +3,7 @@ import OccupationCard from './occupationCard.js';
 import ProjectCard from './projectCard.js';
 import { mailManagement } from './utils.js';
 
-function getSpanish(data, projects, occupation) {
+function getSpanish(data, projects, techno) {
   ////PRESENTATION
   const presentationCard = new PresentationCard();
   const dataEspFiltered = data.filter((element) => element.spanish);
@@ -13,7 +13,7 @@ function getSpanish(data, projects, occupation) {
   presentationArea.innerHTML = presentation;
 
   /////OCCUPATION
-  const occupationSpanFiltered = occupation.filter(
+  const occupationSpanFiltered = techno.filter(
     (element) => element.spanish
   );
   const occupationSpan = occupationSpanFiltered.flatMap(
@@ -26,7 +26,7 @@ function getSpanish(data, projects, occupation) {
 
   /////PROJECTS
   const projectTitle = document.querySelector('.projects__title');
-  projectTitle.innerHTML = 'Proyectos Academicos';
+  projectTitle.innerHTML = 'Portfolio (orden cronológico)';
   const projectCard = new ProjectCard();
   const projectDataSpanFiltered = projects.filter((element) => element.spanish);
   const projectSpan = projectDataSpanFiltered.flatMap(

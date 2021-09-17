@@ -3,7 +3,7 @@ import OccupationCard from './occupationCard.js';
 import ProjectCard from './projectCard.js';
 import { mailManagement } from './utils.js';
 
-function getEnglish(data, projects, occupation) {
+function getEnglish(data, projects, techno) {
   const presentationCard = new PresentationCard();
   const dataEngFiltered = data.filter((element) => element.english);
   const dataEng = dataEngFiltered.flatMap((element) => element.english);
@@ -12,7 +12,7 @@ function getEnglish(data, projects, occupation) {
   presentationArea.innerHTML = presentation;
 
   /////OCCUPATION
-  const occupationEngFiltered = occupation.filter((element) => element.english);
+  const occupationEngFiltered = techno.filter((element) => element.english);
   const occupationEng = occupationEngFiltered.flatMap(
     (element) => element.english
   );
@@ -23,7 +23,7 @@ function getEnglish(data, projects, occupation) {
 
   /////PROJECT
   const projectTitle = document.querySelector('.projects__title');
-  projectTitle.innerHTML = 'Training Projects';
+  projectTitle.innerHTML = 'Portfolio (chronological order)';
   const projectCard = new ProjectCard();
   const projectDataEngFiltered = projects.filter((element) => element.english);
   const projectEng = projectDataEngFiltered.flatMap(

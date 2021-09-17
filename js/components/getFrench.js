@@ -3,7 +3,7 @@ import OccupationCard from './occupationCard.js';
 import ProjectCard from './projectCard.js';
 import { mailManagement } from './utils.js';
 
-function getFrench(data, projects, occupation) {
+function getFrench(data, projects, techno) {
   //////INIITAL STATE IS FRENCH///////
   ////////PRESENTATION//////
   const presentationCard = new PresentationCard();
@@ -16,7 +16,7 @@ function getFrench(data, projects, occupation) {
   ///////OCCUPATION///////
   const occupationArea = document.querySelector('.occupation');
   const occupationCard = new OccupationCard();
-  const occupationFrenchFiltered = occupation.filter(
+  const occupationFrenchFiltered = techno.filter(
     (element) => element.french
   );
   const occupationFrench = occupationFrenchFiltered.flatMap(
@@ -27,7 +27,7 @@ function getFrench(data, projects, occupation) {
 
   //////PROJECTS//////
   const projectTitle = document.querySelector('.projects__title');
-  projectTitle.innerHTML = 'Projets Académiques';
+  projectTitle.innerHTML = 'Portfolio (ordre chronologique)';
   const projectArea = document.querySelector('.projects__elements');
   const projectCard = new ProjectCard();
   const projectDataFrenchFiltered = projects.filter(

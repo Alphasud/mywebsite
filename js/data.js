@@ -12,6 +12,9 @@ const data = [
         github: 'https://github.com/Alphasud',
         linkedin: 'https://www.linkedin.com/in/charlesdenneulin/',
         message: 'Adresse mail copiée dans le presse-papier !',
+        resume:
+          'https://jumbled-cord-e02.notion.site/Charles-Denneulin-7c8f33d0bda04e53a4170b75953ba160',
+        toolTip: 'Voir mon CV.',
       },
     ],
   },
@@ -28,6 +31,9 @@ const data = [
         github: 'https://github.com/Alphasud',
         linkedin: 'https://www.linkedin.com/in/charlesdenneulin/',
         message: 'Mail address copied in the clipboard !',
+        resume:
+          'https://jumbled-cord-e02.notion.site/Charles-Denneulin-7c8f33d0bda04e53a4170b75953ba160',
+        toolTip: 'See my resume (in French).',
       },
     ],
   },
@@ -44,35 +50,36 @@ const data = [
         github: 'https://github.com/Alphasud',
         linkedin: 'https://www.linkedin.com/in/charlesdenneulin/',
         message: 'Dirección de correo copiada en el portapapeles !',
+        resume:
+          'https://jumbled-cord-e02.notion.site/Charles-Denneulin-7c8f33d0bda04e53a4170b75953ba160',
+        toolTip: 'Ver mi CV (en francés).',
       },
     ],
   },
 ];
 
-const occupation = [
+const techno = [
   {
     french: [
       {
-        text: 'Depuis janvier 2021',
-        textother: `En formation avec <a class="occupation__linkOC" href="https://openclassrooms.com/fr/" target="_blank" rel="noopener noreferrer">OpenClassroom</a> sur le parcours <a class="occupation__linkProgr" href="https://openclassrooms.com/fr/paths/314-developpeur-front-end" target="_blank" rel="noopener noreferrer">Développeur Front-End</a>.<br>`,
+        text: 'Stack',
+        textother: '',
       },
     ],
   },
   {
     english: [
       {
-        text: 'Since january 2021 :',
-        textother:
-          'Student at <a class="occupation__linkOC" href="https://openclassrooms.com/en/" target="_blank" rel="noopener noreferrer">OpenClassroom</a> on the <a class="occupation__linkProgr" href="https://openclassrooms.com/en/paths/315-front-end-developer" target="_blank" rel="noopener noreferrer">Front-End developper</a> training program.',
+        text: 'Stack',
+        textother:'',
       },
     ],
   },
   {
     spanish: [
       {
-        text: 'Desde enero 2021 :',
-        textother:
-          'Alumno a <a class="occupation__linkOC" href="https://openclassrooms.com/en/" target="_blank" rel="noopener noreferrer">OpenClassroom</a> en la cualificación de <a class="occupation__linkProgr" href="https://openclassrooms.com/en/paths/315-front-end-developer" target="_blank" rel="noopener noreferrer">desarollador Front-End</a>.',
+        text: 'Stack',
+        textother:'',
       },
     ],
   },
@@ -82,18 +89,63 @@ const projects = [
   {
     french: [
       {
-        id: '2',
+        id: '0',
+        title: `The Alchemist's Lair`,
+        description: `Jeu textuel multi-choix avec UI`,
+        techno: 'Java / Swing',
+        photo: './img/projectAlchemist.png',
+        website: 'none',
+        sourcecode: 'https://github.com/Alphasud/Alchemist_Game',
+      },
+      {
+        id: '1',
+        title: 'Natours',
+        description: `Intégration d'une maquette pour un tour-operator fictif`,
+        techno: 'HTML5 / CSS / Sass',
+        photo: './img/projet1.png',
+        website: 'https://alphasud.github.io/Natours/',
+        sourcecode: 'https://github.com/Alphasud/Natours',
+      },
+      {
+        id: 'canopee',
+        title: `Canopée`,
+        description: 'Intégration de trois maquettes pour des marques fictives',
+        techno: 'HTML5 / CSS / Bootstrap',
+        photo: './img/projectCanopee.png',
+        website: 'https://alphasud.github.io/Canopee/',
+        sourcecode: 'https://github.com/Alphasud/Canopee/tree/gh-pages',
+      },
+      {
+        id: 'recipe',
+        title: `Recipe Finder`,
+        description: `App de recherche de recettes via une API`,
+        techno: 'HTML5 / CSS / ReactJS / Edamam API',
+        photo: './img/projectRecipe.png',
+        website: 'https://recipe-finder-9918d5.netlify.app/',
+        sourcecode: 'https://github.com/Alphasud/recipe-app',
+      },
+      {
+        id: 'ghibli',
+        title: `Ghibli Studio Database`,
+        description: `Divers choses sur l'univers Ghibli`,
+        techno: 'HTML5 / CSS / ReactJS / Ghibli API',
+        photo: './img/projectGhibli.png',
+        website: 'https://ghiblimovies.netlify.app/',
+        sourcecode: 'https://github.com/Alphasud/Ghibli-Movie-Database',
+      },
+      {
+        id: 'OC2',
         title: 'Reservia',
-        description: `Intégration d'une maquette`,
+        description: `Intégration d'une maquette pour une plateforme de réservation fictive`,
         techno: 'HTML5 / CSS',
         photo: './img/projet2.png',
         website: 'https://alphasud.github.io/CharlesDenneulin_2_12012021',
         sourcecode: 'https://github.com/Alphasud/CharlesDenneulin_2_12012021',
       },
       {
-        id: '3',
+        id: 'OC3',
         title: 'ohmyfood',
-        description: `Intégration de maquettes et création d'animations CSS`,
+        description: `Intégration de maquettes et d'animations CSS pour une App de réservation de repas`,
         techno: 'HTML5 / SCSS',
         photo: './img/projet3.png',
         website:
@@ -101,7 +153,7 @@ const projects = [
         sourcecode: 'https://github.com/Alphasud/CharlesDenneulin_3_27012021',
       },
       {
-        id: '4',
+        id: 'OC4',
         title: 'GameOn',
         description: `Intégration d'une maquette et validation de formulaire`,
         techno: 'HTML5 / SCSS / Vanilla JS',
@@ -110,7 +162,7 @@ const projects = [
         sourcecode: 'https://github.com/Alphasud/GameOn-website-FR',
       },
       {
-        id: '6',
+        id: 'OC6',
         title: 'FishEye',
         description: `Intégration d'une maquette, orientée accessibilité (aria),  plusieurs features: filter, form, lightbox, sort, like button.`,
         techno: 'HTML5 / SCSS / Vanilla JS / ARIA / ESLint',
@@ -119,7 +171,7 @@ const projects = [
         sourcecode: 'https://github.com/Alphasud/CharlesDenneulin_6_18022021',
       },
       {
-        id: '7',
+        id: 'OC7',
         title: 'Les Petits Plats',
         description: `Intégration d'une maquette, et création d'un algorithme de recherche`,
         techno: 'HTML5 / SCSS / Vanilla JS / ESlint',
@@ -128,7 +180,7 @@ const projects = [
         sourcecode: 'https://github.com/Alphasud/CharlesDenneulin_7_24032021',
       },
       {
-        id: '11',
+        id: 'OC11',
         title: 'Kasa',
         description: `Intégration d'une maquette`,
         techno: 'HTML5 / SCSS / ReactJS / ReactRouter',
@@ -137,7 +189,7 @@ const projects = [
         sourcecode: 'https://github.com/Alphasud/CharlesDenneulin_11_17062021',
       },
       {
-        id: '12',
+        id: 'OC12',
         title: 'SportSee',
         description: `Intégration d'une maquette, construction de graphiques, données via API`,
         techno: 'HTML5 / SCSS / ReactJS / ReactRouter / Recharts',
@@ -150,7 +202,52 @@ const projects = [
   {
     english: [
       {
-        id: '2',
+        id: '0',
+        title: `The Alchemist's Lair`,
+        description: `Multi-choices text game with UI`,
+        techno: 'Java / Swing',
+        photo: './img/projectAlchemist.png',
+        website: 'none',
+        sourcecode: 'https://github.com/Alphasud/Alchemist_Game',
+      },
+      {
+        id: '1',
+        title: 'Natours',
+        description: `Mockup integration`,
+        techno: 'HTML5 / CSS / Sass',
+        photo: './img/projet1.png',
+        website: 'https://alphasud.github.io/Natours/',
+        sourcecode: 'https://github.com/Alphasud/Natours',
+      },
+      {
+        id: 'recipe',
+        title: `Recipe Finder`,
+        description: `App that fetches recipe from an API`,
+        techno: 'HTML5 / CSS / ReactJS / Edamam API',
+        photo: './img/projectRecipe.png',
+        website: 'https://recipe-finder-9918d5.netlify.app/',
+        sourcecode: 'https://github.com/Alphasud/recipe-app',
+      },
+      {
+        id: 'ghibli',
+        title: `Ghibli Studio Database`,
+        description: `Random stuff about the Ghibli movies`,
+        techno: 'HTML5 / CSS / ReactJS / Ghibli API',
+        photo: './img/projectGhibli.png',
+        website: 'https://ghiblimovies.netlify.app/',
+        sourcecode: 'https://github.com/Alphasud/Ghibli-Movie-Database',
+      },
+      {
+        id: 'canopee',
+        title: `Canopée`,
+        description: 'Mockup integration for three fake brands',
+        techno: 'HTML5 / CSS / Bootstrap',
+        photo: './img/projectCanopee.png',
+        website: 'https://alphasud.github.io/Canopee/',
+        sourcecode: 'https://github.com/Alphasud/Canopee/tree/gh-pages',
+      },
+      {
+        id: 'OC2',
         title: 'Reservia',
         description: `Mockup integration`,
         techno: 'HTML5 / CSS',
@@ -159,7 +256,7 @@ const projects = [
         sourcecode: 'https://github.com/Alphasud/CharlesDenneulin_2_12012021',
       },
       {
-        id: '3',
+        id: 'OC3',
         title: 'ohmyfood',
         description: `Mockup integration, CSS animations`,
         techno: 'HTML5 / SCSS',
@@ -169,7 +266,7 @@ const projects = [
         sourcecode: 'https://github.com/Alphasud/CharlesDenneulin_3_27012021',
       },
       {
-        id: '4',
+        id: 'OC4',
         title: 'GameOn',
         description: `Mockup integration and form validation`,
         techno: 'HTML5 / SCSS / Vanilla JS',
@@ -178,7 +275,7 @@ const projects = [
         sourcecode: 'https://github.com/Alphasud/GameOn-website-FR',
       },
       {
-        id: '6',
+        id: 'OC6',
         title: 'FishEye',
         description: `Mockup integration, accessibility (aria),  several features: filter, form, lightbox, sort, like button.`,
         techno: 'HTML5 / SCSS / Vanilla JS / ARIA / ESLint',
@@ -187,7 +284,7 @@ const projects = [
         sourcecode: 'https://github.com/Alphasud/CharlesDenneulin_6_18022021',
       },
       {
-        id: '7',
+        id: 'OC7',
         title: 'Les Petits Plats',
         description: `Mockup integration and creation of a search algorithm`,
         techno: 'HTML5 / SCSS / Vanilla JS / ESlint',
@@ -196,7 +293,7 @@ const projects = [
         sourcecode: 'https://github.com/Alphasud/CharlesDenneulin_7_24032021',
       },
       {
-        id: '11',
+        id: 'OC11',
         title: 'Kasa',
         description: `Mockup integration`,
         techno: 'HTML5 / SCSS / ReactJS / ReactRouter',
@@ -205,7 +302,7 @@ const projects = [
         sourcecode: 'https://github.com/Alphasud/CharlesDenneulin_11_17062021',
       },
       {
-        id: '12',
+        id: 'OC12',
         title: 'SportSee',
         description: `Mockup integration, graphic charts, data fetched from API`,
         techno: 'HTML5 / SCSS / ReactJS / ReactRouter / Recharts',
@@ -217,6 +314,51 @@ const projects = [
   },
   {
     spanish: [
+      {
+        id: '0',
+        title: `The Alchemist's Lair`,
+        description: `Juego textual multi-opciónes con UI`,
+        techno: 'Java / Swing',
+        photo: './img/projectAlchemist.png',
+        website: 'none',
+        sourcecode: 'https://github.com/Alphasud/Alchemist_Game',
+      },
+      {
+        id: '1',
+        title: 'Natours',
+        description: `Integración de un diseño de página web`,
+        techno: 'HTML5 / CSS / Sass',
+        photo: './img/projet1.png',
+        website: 'https://alphasud.github.io/Natours/',
+        sourcecode: 'https://github.com/Alphasud/Natours',
+      },
+      {
+        id: 'recipe',
+        title: `Recipe Finder`,
+        description: `App para buscar recetas`,
+        techno: 'HTML5 / CSS / ReactJS / Edamam API',
+        photo: './img/projectRecipe.png',
+        website: 'https://recipe-finder-9918d5.netlify.app/',
+        sourcecode: 'https://github.com/Alphasud/recipe-app',
+      },
+      {
+        id: 'ghibli',
+        title: `Ghibli Studio Database`,
+        description: `Cosas sobre las peliculas Ghibli`,
+        techno: 'HTML5 / CSS / ReactJS / Ghibli API',
+        photo: './img/projectGhibli.png',
+        website: 'https://ghiblimovies.netlify.app/',
+        sourcecode: 'https://github.com/Alphasud/Ghibli-Movie-Database',
+      },
+      {
+        id: 'canopee',
+        title: `Canopée`,
+        description: 'Integración de diseños para 3 marquas ficticias',
+        techno: 'HTML5 / CSS / Bootstrap',
+        photo: './img/projectCanopee.png',
+        website: 'https://alphasud.github.io/Canopee/',
+        sourcecode: 'https://github.com/Alphasud/Canopee/tree/gh-pages',
+      },
       {
         id: '2',
         title: 'Reservia',
@@ -285,4 +427,4 @@ const projects = [
   },
 ];
 
-export { data, occupation, projects };
+export { data, techno, projects };

@@ -12,12 +12,35 @@ main {
   padding: 0.5rem 1rem;
   transition: opacity 0.1s ease;
 }
+
+.resume-message {
+  position: absolute;
+  top: 4rem;
+  left: -2rem;
+  opacity: 0;
+  height: 5rem;
+  background-color: coral;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+  color: rgba(252, 240, 240, 0.952);
+  transition: opacity .1s ease;
+}
+
+.resume-icon:hover ~ .resume-message {
+  opacity: 1;
+}
+
 .top {
   display: flex;
   flex-wrap: wrap;
   flex-basis: 100%;
 }
 .occupation {
+  display: flex;
+  justify-content:flex-start;
   flex-basis: 49%;
   margin-left: 1%;
   margin-top: 2rem;
@@ -27,7 +50,29 @@ main {
   padding: 1rem;
   transition: background-color 0.25s ease-in;
   &__top {
-    margin-top: 3rem;
+    margin-top: 2rem;
+    width: 100%;
+    h1 {font-size: 3.5rem;}
+
+    &__stack {
+      margin: 2rem 0.5rem 0 0.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &__row {
+        width: 75%;
+        display: flex;
+        &:first-child { 
+          margin-bottom: 3rem;
+          justify-content: space-between;
+        }
+        &:last-child {
+          justify-content: space-evenly;
+         }
+      }
+    }
   }
   &__linkOC {
     transition: color 0.5s ease-in;
@@ -66,7 +111,7 @@ main {
     }
     &__right {
       &__name {
-        font-size: 3rem;
+        font-size: 3.5rem;
         margin-left: 1rem;
         margin-bottom: 0.5rem;
         line-height: 0.8;
@@ -84,6 +129,7 @@ main {
     text-justify: inter-word;
   }
   &__social {
+    position: relative;
     width: 50%;
     display: flex;
     justify-content: flex-start;
@@ -122,7 +168,7 @@ main {
     margin: 0 auto;
 
     &__item {
-      height: 50rem;
+      height: 45rem;
       display: flex;
       align-items: center;
       flex-basis: 30%;

@@ -120,6 +120,26 @@ main {
   transition: opacity 0.1s ease;
 }
 
+.resume-message {
+  position: absolute;
+  top: 4rem;
+  left: -2rem;
+  opacity: 0;
+  height: 5rem;
+  background-color: coral;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+  color: rgba(252, 240, 240, 0.952);
+  transition: opacity 0.1s ease;
+}
+
+.resume-icon:hover ~ .resume-message {
+  opacity: 1;
+}
+
 .top {
   display: flex;
   flex-wrap: wrap;
@@ -127,6 +147,8 @@ main {
 }
 
 .occupation {
+  display: flex;
+  justify-content: flex-start;
   flex-basis: 49%;
   margin-left: 1%;
   margin-top: 2rem;
@@ -137,7 +159,29 @@ main {
   transition: background-color 0.25s ease-in;
 }
 .occupation__top {
-  margin-top: 3rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+.occupation__top h1 {
+  font-size: 3.5rem;
+}
+.occupation__top__stack {
+  margin: 2rem 0.5rem 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.occupation__top__stack__row {
+  width: 75%;
+  display: flex;
+}
+.occupation__top__stack__row:first-child {
+  margin-bottom: 3rem;
+  justify-content: space-between;
+}
+.occupation__top__stack__row:last-child {
+  justify-content: space-evenly;
 }
 .occupation__linkOC {
   transition: color 0.5s ease-in;
@@ -171,7 +215,7 @@ main {
   object-position: top;
 }
 .presentation__top__right__name {
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin-left: 1rem;
   margin-bottom: 0.5rem;
   line-height: 0.8;
@@ -187,6 +231,7 @@ main {
   text-justify: inter-word;
 }
 .presentation__social {
+  position: relative;
   width: 50%;
   display: flex;
   justify-content: flex-start;
@@ -222,7 +267,7 @@ main {
   margin: 0 auto;
 }
 .projects__elements__item {
-  height: 50rem;
+  height: 45rem;
   display: flex;
   align-items: center;
   flex-basis: 30%;
