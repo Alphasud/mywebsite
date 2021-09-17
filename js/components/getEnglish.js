@@ -61,6 +61,14 @@ function getEnglish(data, projects, techno, contact) {
       .catch((error) => {
         status.innerHTML = 'Oops! There was a problem submitting your form';
       });
+    
+    setTimeout(function () {
+      contactSection.style.display = 'none';
+      header.style.filter = '';
+      main.style.filter = '';
+      footer.style.filter = '';
+      status.innerHTML = '';
+    }, 2000);
   }
 
   form.addEventListener('submit', handleSubmit);

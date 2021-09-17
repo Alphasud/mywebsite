@@ -49,7 +49,6 @@ function getFrench(data, projects, techno, contact) {
 
   const form = document.getElementById('my-form');
   async function handleSubmit(event) {
-    console.log('SENDING FORM');
     event.preventDefault();
     var status = document.getElementById('my-form-status');
     var data = new FormData(event.target);
@@ -74,7 +73,8 @@ function getFrench(data, projects, techno, contact) {
       header.style.filter = '';
       main.style.filter = '';
       footer.style.filter = '';
-    }, 1000);
+      status.innerHTML = '';
+    }, 2000);
   }
 
   form.addEventListener('submit', handleSubmit);

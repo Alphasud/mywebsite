@@ -68,7 +68,8 @@ function getSpanish(data, projects, techno, contact) {
       header.style.filter = '';
       main.style.filter = '';
       footer.style.filter = '';
-    }, 1000);
+      status.innerHTML = '';
+    }, 2000);
   }
 
   form.addEventListener('submit', handleSubmit);
