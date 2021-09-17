@@ -220,6 +220,15 @@ const projects = [
         sourcecode: 'https://github.com/Alphasud/Natours',
       },
       {
+        id: 'canopee',
+        title: `Canopée`,
+        description: 'Mockup integration for three fake brands',
+        techno: 'HTML5 / CSS / Bootstrap',
+        photo: './img/projectCanopee.png',
+        website: 'https://alphasud.github.io/Canopee/',
+        sourcecode: 'https://github.com/Alphasud/Canopee/tree/gh-pages',
+      },
+      {
         id: 'recipe',
         title: `Recipe Finder`,
         description: `App that fetches recipe from an API`,
@@ -236,15 +245,6 @@ const projects = [
         photo: './img/projectGhibli.png',
         website: 'https://ghiblimovies.netlify.app/',
         sourcecode: 'https://github.com/Alphasud/Ghibli-Movie-Database',
-      },
-      {
-        id: 'canopee',
-        title: `Canopée`,
-        description: 'Mockup integration for three fake brands',
-        techno: 'HTML5 / CSS / Bootstrap',
-        photo: './img/projectCanopee.png',
-        website: 'https://alphasud.github.io/Canopee/',
-        sourcecode: 'https://github.com/Alphasud/Canopee/tree/gh-pages',
       },
       {
         id: 'OC2',
@@ -333,6 +333,15 @@ const projects = [
         sourcecode: 'https://github.com/Alphasud/Natours',
       },
       {
+        id: 'canopee',
+        title: `Canopée`,
+        description: 'Integración de diseños para 3 marquas ficticias',
+        techno: 'HTML5 / CSS / Bootstrap',
+        photo: './img/projectCanopee.png',
+        website: 'https://alphasud.github.io/Canopee/',
+        sourcecode: 'https://github.com/Alphasud/Canopee/tree/gh-pages',
+      },
+      {
         id: 'recipe',
         title: `Recipe Finder`,
         description: `App para buscar recetas`,
@@ -349,15 +358,6 @@ const projects = [
         photo: './img/projectGhibli.png',
         website: 'https://ghiblimovies.netlify.app/',
         sourcecode: 'https://github.com/Alphasud/Ghibli-Movie-Database',
-      },
-      {
-        id: 'canopee',
-        title: `Canopée`,
-        description: 'Integración de diseños para 3 marquas ficticias',
-        techno: 'HTML5 / CSS / Bootstrap',
-        photo: './img/projectCanopee.png',
-        website: 'https://alphasud.github.io/Canopee/',
-        sourcecode: 'https://github.com/Alphasud/Canopee/tree/gh-pages',
       },
       {
         id: '2',
