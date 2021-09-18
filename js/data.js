@@ -91,6 +91,9 @@ const contact = [
       {
         email: 'Votre email',
         message: 'Votre Message',
+        bouton: 'Envoyer',
+        errorEmail: `Je vais avoir besoin d'une adresse mail 📧`,
+        errorMessage: 'Dites-moi quelque chose...',
       },
     ],
   },
@@ -99,6 +102,9 @@ const contact = [
       {
         email: 'Your email address',
         message: 'Your message',
+        bouton: 'Submit',
+        errorEmail: `Please, enter your email address 📧`,
+        errorMessage: 'Say something...',
       },
     ],
   },
@@ -107,6 +113,9 @@ const contact = [
       {
         email: 'Su correo electronico',
         message: 'Su mensaje',
+        bouton: 'Enviar',
+        errorMail: `Introduce una dirección de correo electrónico por fa' 📧`,
+        errorMessage: 'Dígame algo...',
       },
     ],
   },

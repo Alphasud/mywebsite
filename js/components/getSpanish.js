@@ -42,11 +42,20 @@ function getSpanish(data, projects, techno, contact) {
   const contactSection = document.querySelector('.contact');
   contactSection.innerHTML = formContact;
 
+  const contactFormEmail = document.querySelector('.contact__form__email');
+  const contactFormMessage = document.querySelector('.contact__form__message');
+  const contactFormButton = document.querySelector('.contact__form__button');
+  const contactFormLabelEmail = document.querySelector(
+    '.contact__form__label__email'
+  );
+  const contactFormLabelMessage = document.querySelector(
+    '.contact__form__label__message'
+  );
+  const status = document.querySelector('.contact__form__status');  
   const form = document.getElementById('my-form');
   async function handleSubmit(event) {
     event.preventDefault();
-    var status = document.getElementById('my-form-status');
-    var data = new FormData(event.target);
+    const data = new FormData(event.target);
 
     fetch(event.target.action, {
       method: form.method,
@@ -56,20 +65,40 @@ function getSpanish(data, projects, techno, contact) {
       },
     })
       .then((response) => {
-        status.innerHTML = 'Merci pour votre message !';
-        form.reset();
+        if (response.status !== 200) {
+          status.classList.add('invalid');
+          status.innerHTML = `Ohlala... &#128565 Hubo un problema con el envío del mensaje. Puedes intentar otra vez ?`;
+        } else {
+          status.classList.remove('invalid');
+          status.classList.add('valid');
+          status.innerHTML =
+            'All Good &#128293 Gracias por su mensaje &#128578 !';
+          form.reset();
+          contactFormEmail.style.display = 'none';
+          contactFormMessage.style.display = 'none';
+          contactFormButton.style.display = 'none';
+          contactFormLabelEmail.style.display = 'none';
+          contactFormLabelMessage.style.display = 'none';
+
+          setTimeout(function () {
+            contactSection.style.display = 'none';
+            header.style.filter = '';
+            main.style.filter = '';
+            footer.style.filter = '';
+            status.innerHTML = '';
+            contactFormEmail.style.display = '';
+            contactFormMessage.style.display = '';
+            contactFormButton.style.display = '';
+            contactFormLabelEmail.style.display = '';
+            contactFormLabelMessage.style.display = '';
+          }, 6000);
+        }
       })
       .catch((error) => {
-        status.innerHTML = `Oops! Il y a eu un soucis avec l'envoi du message.`;
+        console.log(error);
+        status.innerHTML = `Oops! Hubo un problema con el envío del mensaje &#128565`;
       });
 
-    setTimeout(function () {
-      contactSection.style.display = 'none';
-      header.style.filter = '';
-      main.style.filter = '';
-      footer.style.filter = '';
-      status.innerHTML = '';
-    }, 2000);
   }
 
   form.addEventListener('submit', handleSubmit);
@@ -93,6 +122,14 @@ function getSpanish(data, projects, techno, contact) {
     header.style.filter = '';
     main.style.filter = '';
     footer.style.filter = '';
+    contactFormEmail.style.display = '';
+    contactFormMessage.style.display = '';
+    contactFormButton.style.display = '';
+    contactFormLabelEmail.style.display = '';
+    contactFormLabelMessage.style.display = '';
+    status.innerHTML = '';
+    status.classList.remove('invalid');
+    status.classList.remove('valid');
   });
 }
 

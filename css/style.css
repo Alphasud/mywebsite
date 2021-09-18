@@ -283,15 +283,18 @@ main {
   height: 2.5rem;
   border-radius: 5px;
   border: none;
+  outline: none;
   background-color: rgba(240, 248, 255, 0.8);
 }
 .contact__form__message {
   height: 20rem;
   border-radius: 5px;
   border: none;
+  outline: none;
   background-color: rgba(240, 248, 255, 0.8);
 }
 .contact__form__button {
+  cursor: pointer;
   margin-top: 1rem;
   width: 10rem;
   background-color: rgba(240, 248, 255, 0.8);
@@ -299,6 +302,41 @@ main {
   font-weight: 900;
   border-radius: 5px;
   padding: 0.5rem;
+}
+.contact__form__status {
+  margin-top: 1rem;
+}
+
+.invalid {
+  opacity: 0.8;
+  color: crimson;
+  background-color: aliceblue;
+  border-radius: 10px;
+  padding: 0.25rem;
+}
+
+.valid {
+  color: aquamarine;
+}
+
+.valid-field {
+  border: 2px aquamarine solid;
+}
+
+.invalid-field {
+  border: 2px tomato solid;
+}
+
+.error-message__email, .error-message__message {
+  display: none;
+  color: tomato;
+}
+
+.success-message__email {
+  display: none;
+  position: absolute;
+  top: 5.5rem;
+  right: 3rem;
 }
 
 .projects {

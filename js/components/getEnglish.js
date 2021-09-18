@@ -2,7 +2,6 @@ import PresentationCard from './presCard.js';
 import OccupationCard from './occupationCard.js';
 import ProjectCard from './projectCard.js';
 import ContactForm from './form.js';
-import { mailManagement } from './utils.js';
 
 function getEnglish(data, projects, techno, contact) {
   const presentationCard = new PresentationCard();
@@ -42,11 +41,23 @@ function getEnglish(data, projects, techno, contact) {
   const contactSection = document.querySelector('.contact');
   contactSection.innerHTML = formContact;
 
+
+  const contactFormEmail = document.querySelector('.contact__form__email');
+  const contactFormMessage = document.querySelector('.contact__form__message');
+  const contactFormButton = document.querySelector('.contact__form__button');
+  const contactFormLabelEmail = document.querySelector(
+    '.contact__form__label__email'
+  );
+  const contactFormLabelMessage = document.querySelector(
+    '.contact__form__label__message'
+  );
+  const status = document.querySelector('.contact__form__status');
   const form = document.getElementById('my-form');
+
   async function handleSubmit(event) {
     event.preventDefault();
-    var status = document.getElementById('my-form-status');
-    var data = new FormData(event.target);
+    
+    const data = new FormData(event.target);
     fetch(event.target.action, {
       method: form.method,
       body: data,
@@ -55,20 +66,40 @@ function getEnglish(data, projects, techno, contact) {
       },
     })
       .then((response) => {
-        status.innerHTML = 'Thanks for your submission!';
-        form.reset();
+        if (response.status !== 200) {
+          status.classList.add('invalid');
+          status.innerHTML = `Ohlala... &#128565 Something went wrong. Would you be so kind to try again ?`;
+        } else {
+          status.classList.remove('invalid');
+          status.classList.add('valid');
+          status.innerHTML =
+            'All Good &#128293 Thank you for your message &#128578 !';
+          form.reset();
+          contactFormEmail.style.display = 'none';
+          contactFormMessage.style.display = 'none';
+          contactFormButton.style.display = 'none';
+          contactFormLabelEmail.style.display = 'none';
+          contactFormLabelMessage.style.display = 'none';
+
+          setTimeout(function () {
+            contactSection.style.display = 'none';
+            header.style.filter = '';
+            main.style.filter = '';
+            footer.style.filter = '';
+            status.innerHTML = '';
+            contactFormEmail.style.display = '';
+            contactFormMessage.style.display = '';
+            contactFormButton.style.display = '';
+            contactFormLabelEmail.style.display = '';
+            contactFormLabelMessage.style.display = '';
+          }, 6000);
+        }
       })
       .catch((error) => {
-        status.innerHTML = 'Oops! There was a problem submitting your form';
+        console.log(error);
+        status.innerHTML =
+          'Oops! There was a problem submitting your form &#128565';
       });
-    
-    setTimeout(function () {
-      contactSection.style.display = 'none';
-      header.style.filter = '';
-      main.style.filter = '';
-      footer.style.filter = '';
-      status.innerHTML = '';
-    }, 2000);
   }
 
   form.addEventListener('submit', handleSubmit);
@@ -93,6 +124,14 @@ function getEnglish(data, projects, techno, contact) {
     header.style.filter = '';
     main.style.filter = '';
     footer.style.filter = '';
+    contactFormEmail.style.display = '';
+    contactFormMessage.style.display = '';
+    contactFormButton.style.display = '';
+    contactFormLabelEmail.style.display = '';
+    contactFormLabelMessage.style.display = '';
+    status.innerHTML = '';
+    status.classList.remove('invalid');
+    status.classList.remove('valid');
   });
 }
 
