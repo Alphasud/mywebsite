@@ -68,3 +68,5 @@ footer.insertAdjacentHTML(
   'beforeend',
   '<span>Happily coded with vanilla JavaScript :) -> </span><a href="https://github.com/Alphasud/mywebsite" target="_blank" rel="noopener noreferrer">Source Code</a>'
 );
+
+

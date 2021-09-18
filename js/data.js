@@ -114,7 +114,7 @@ const contact = [
         email: 'Su correo electronico',
         message: 'Su mensaje',
         bouton: 'Enviar',
-        errorMail: `Introduce una dirección de correo electrónico por fa' 📧`,
+        errorEmail: `Introduce una dirección de correo electrónico por fa' 📧`,
         errorMessage: 'Dígame algo...',
       },
     ],

@@ -24,6 +24,7 @@ a {
 }
 
 .wrapper {
+  height: 100%;
   margin: 0 5%;
   transition: color 0.5s ease-in, background-color 0.2s ease-in;
 }
@@ -98,6 +99,10 @@ body {
   transform: rotate(0deg) scale(1.2);
 }
 
+header {
+  transition: all 0.1s ease;
+}
+
 @media screen and (max-width: 900px) {
   .header {
     display: flex;
@@ -107,6 +112,7 @@ body {
 main {
   display: flex;
   flex-direction: column;
+  transition: all 0.1s ease;
 }
 
 .copy-message {
@@ -259,6 +265,7 @@ main {
   left: 31.25%;
   top: 20%;
   padding: 2rem;
+  z-index: 10;
 }
 .contact__form {
   display: flex;
@@ -437,6 +444,10 @@ main {
   object-position: center;
 }
 
+footer {
+  transition: all 0.1s ease;
+}
+
 .dark .occupation__linkOC {
   color: #ecec1a;
 }
@@ -496,6 +507,11 @@ main {
   .copy-message {
     width: 100%;
     text-align: center;
+  }
+
+  .contact {
+    width: 90%;
+    left: 5%;
   }
 }
 

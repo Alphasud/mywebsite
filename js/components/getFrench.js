@@ -2,7 +2,6 @@ import PresentationCard from './presCard.js';
 import OccupationCard from './occupationCard.js';
 import ProjectCard from './projectCard.js';
 import ContactForm from './form.js';
-import { mailManagement } from './utils.js';
 
 function getFrench(data, projects, techno, contact) {
   //////INIITAL STATE IS FRENCH///////
@@ -57,6 +56,11 @@ function getFrench(data, projects, techno, contact) {
   const userMessageError = document.querySelector('.error-message__message');
   const userEmailError = document.querySelector('.error-message__email');
   const userEmailSuccess = document.querySelector('.success-message__email');
+  let header = document.querySelector('header');
+  let main = document.querySelector('main');
+  let footer = document.querySelector('footer');
+  let mail = document.querySelector('.presentation__social__mail');
+  
 
   async function handleSubmit(event) {
     event.preventDefault();
@@ -84,6 +88,7 @@ function getFrench(data, projects, techno, contact) {
             contactFormButton.style.display = 'none';
             contactFormLabelEmail.style.display = 'none';
             contactFormLabelMessage.style.display = 'none';
+            userEmailSuccess.style.display = 'none';
 
             setTimeout(function () {
               contactSection.style.display = 'none';
@@ -107,6 +112,10 @@ function getFrench(data, projects, techno, contact) {
               contactFormButton.classList.remove('invalid-field');
               contactFormButton.classList.remove('valid-field');
               userEmailSuccess.style.display = 'none';
+              header.style.pointerEvents = '';
+              main.style.pointerEvents = '';
+              footer.style.pointerEvents = '';
+
             }, 6000);
           }
         
@@ -195,11 +204,6 @@ function getFrench(data, projects, techno, contact) {
   });
 
   form.addEventListener('submit', handleSubmit);
-  
-  let header = document.querySelector('header');
-  let main = document.querySelector('main');
-  let footer = document.querySelector('footer');
-  let mail = document.querySelector('.presentation__social__mail');
 
   mail.addEventListener('click', (e) => {
     e.preventDefault();
@@ -207,6 +211,9 @@ function getFrench(data, projects, techno, contact) {
     header.style.filter = 'blur(3px)';
     main.style.filter = 'blur(3px)';
     footer.style.filter = 'blur(3px)';
+    header.style.pointerEvents = 'none';
+    main.style.pointerEvents = 'none';
+    footer.style.pointerEvents = 'none';
   });
 
   let closeButton = document.querySelector('.contact__form__close');
@@ -238,10 +245,11 @@ function getFrench(data, projects, techno, contact) {
     contactFormButton.classList.remove('invalid-field');
     contactFormButton.classList.remove('valid-field');
     userEmailSuccess.style.display = 'none';
+    header.style.pointerEvents = '';
+    main.style.pointerEvents = '';
+    footer.style.pointerEvents = '';
   });
 
-  //let message = document.querySelectorAll('.copy-message');
-  //mailManagement(mail, message, mailLink);
 }
 
 export { getFrench };

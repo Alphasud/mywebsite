@@ -1,6 +1,7 @@
 main {
   display: flex;
   flex-direction: column;
+  transition: all 0.1s ease;
 }
 .copy-message {
   width: 90%;
@@ -159,6 +160,7 @@ main {
   left: 31.25%;
   top: 20%;
   padding: 2rem;
+  z-index: 10;
   &__form {
     display: flex;
     flex-direction: column;
@@ -342,6 +344,10 @@ main {
   }
 }
 
+footer { 
+  transition: all 0.1s ease;
+}
+
 .dark .occupation__linkOC {
   color: $yellow;
 }
@@ -394,5 +400,9 @@ main {
   .copy-message {
     width: 100%;
     text-align: center;
+  }
+  .contact {
+    width: 90%;
+    left: 5%;
   }
 }
