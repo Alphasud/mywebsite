@@ -157,6 +157,7 @@ main {
   border-radius: 5px;
   justify-content: center;
   width: 37.5%;
+  max-width: 75rem;
   left: 31.25%;
   top: 20%;
   padding: 2rem;
@@ -164,7 +165,7 @@ main {
     display: flex;
     flex-direction: column;
     color: aliceblue;
-    width: 50rem;
+    width: 90%;
     label{margin-top: 1rem;color: aliceblue;}
     &__close {
       position: absolute;
@@ -231,7 +232,7 @@ main {
   display: none;
   position: absolute;
   top: 5.5rem;
-  right: 7.5%;
+  right: 10%;
 }
 
 .projects {
@@ -372,6 +373,9 @@ footer {
   .occupation__top {
     margin-top: 0;
   }
+  .success-message__email {
+  right: 15%;
+}
 }
 @media screen and (max-width: 550px) {
   .projects__elements__item {
@@ -400,4 +404,7 @@ footer {
     width: 90%;
     left: 5%;
   }
+  .success-message__email {
+  right: 15%;
+}
 }
