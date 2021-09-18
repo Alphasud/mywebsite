@@ -19,7 +19,6 @@ class PresentationCard {
           <a href="${element.github}" target="_blank" rel="noopener noreferrer"><i class="fab fa-github fa-2x"></i></a>
           <a href="${element.linkedin}" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin fa-2x"></i></a>
         </div>
-        <span class='copy-message'>${element.message}</span>
         <p class='presentation__description'>${element.description}</p>
             `;
       });
