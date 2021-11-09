@@ -23,13 +23,13 @@ function getEnglish(data, projects, techno, contact) {
 
   /////PROJECT
   const projectTitle = document.querySelector('.projects__title');
-  projectTitle.innerHTML = 'Portfolio (chronological order)';
+  projectTitle.innerHTML = 'Portfolio (reverse chronological order)';
   const projectCard = new ProjectCard();
   const projectDataEngFiltered = projects.filter((element) => element.english);
   const projectEng = projectDataEngFiltered.flatMap(
     (element) => element.english
   );
-  let projectElement = projectCard.createProjectCard(projectEng);
+  let projectElement = projectCard.createProjectCard(projectEng.reverse());
   const projectArea = document.querySelector('.projects__elements');
   projectArea.innerHTML = projectElement;
 

@@ -24,13 +24,13 @@ function getSpanish(data, projects, techno, contact) {
 
   /////PROJECTS
   const projectTitle = document.querySelector('.projects__title');
-  projectTitle.innerHTML = 'Portfolio (orden cronológico)';
+  projectTitle.innerHTML = 'Portfolio (orden anticronológico)';
   const projectCard = new ProjectCard();
   const projectDataSpanFiltered = projects.filter((element) => element.spanish);
   const projectSpan = projectDataSpanFiltered.flatMap(
     (element) => element.spanish
   );
-  let projectElement = projectCard.createProjectCard(projectSpan);
+  let projectElement = projectCard.createProjectCard(projectSpan.reverse());
   const projectArea = document.querySelector('.projects__elements');
   projectArea.innerHTML = projectElement;
 

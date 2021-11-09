@@ -25,7 +25,7 @@ function getFrench(data, projects, techno, contact) {
 
   //////PROJECTS//////
   const projectTitle = document.querySelector('.projects__title');
-  projectTitle.innerHTML = 'Portfolio (ordre chronologique)';
+  projectTitle.innerHTML = 'Portfolio (ordre anti-chronologique)';
   const projectArea = document.querySelector('.projects__elements');
   const projectCard = new ProjectCard();
   const projectDataFrenchFiltered = projects.filter(
@@ -34,7 +34,7 @@ function getFrench(data, projects, techno, contact) {
   const projectFrench = projectDataFrenchFiltered.flatMap(
     (element) => element.french
   );
-  let projectElement = projectCard.createProjectCard(projectFrench);
+  let projectElement = projectCard.createProjectCard(projectFrench.reverse());
   projectArea.innerHTML = projectElement;
 
   ////CONTACT FORM

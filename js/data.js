@@ -143,7 +143,7 @@ const projects = [
         sourcecode: 'https://github.com/Alphasud/Natours',
       },
       {
-        id: 'canopee',
+        id: '2',
         title: `Canopée`,
         description: 'Intégration de trois maquettes pour des marques fictives',
         techno: 'HTML5 / CSS / Bootstrap',
@@ -152,7 +152,7 @@ const projects = [
         sourcecode: 'https://github.com/Alphasud/Canopee/tree/gh-pages',
       },
       {
-        id: 'recipe',
+        id: '3',
         title: `Recipe Finder`,
         description: `App de recherche de recettes via une API`,
         techno: 'HTML5 / CSS / ReactJS / Edamam API',
@@ -161,7 +161,7 @@ const projects = [
         sourcecode: 'https://github.com/Alphasud/recipe-app',
       },
       {
-        id: 'ghibli',
+        id: '4',
         title: `Ghibli Studio Database`,
         description: `Divers choses sur l'univers Ghibli`,
         techno: 'HTML5 / CSS / ReactJS / Ghibli API',
@@ -170,7 +170,7 @@ const projects = [
         sourcecode: 'https://github.com/Alphasud/Ghibli-Movie-Database',
       },
       {
-        id: 'OC2',
+        id: '5',
         title: 'Reservia',
         description: `Intégration d'une maquette pour une plateforme de réservation fictive`,
         techno: 'HTML5 / CSS',
@@ -179,7 +179,7 @@ const projects = [
         sourcecode: 'https://github.com/Alphasud/CharlesDenneulin_2_12012021',
       },
       {
-        id: 'OC3',
+        id: '6',
         title: 'ohmyfood',
         description: `Intégration de maquettes et d'animations CSS pour une App de réservation de repas`,
         techno: 'HTML5 / SCSS',
@@ -189,7 +189,7 @@ const projects = [
         sourcecode: 'https://github.com/Alphasud/CharlesDenneulin_3_27012021',
       },
       {
-        id: 'OC4',
+        id: '7',
         title: 'GameOn',
         description: `Intégration d'une maquette et validation de formulaire`,
         techno: 'HTML5 / SCSS / Vanilla JS',
@@ -198,7 +198,7 @@ const projects = [
         sourcecode: 'https://github.com/Alphasud/GameOn-website-FR',
       },
       {
-        id: 'OC6',
+        id: '8',
         title: 'FishEye',
         description: `Intégration d'une maquette, orientée accessibilité (aria),  plusieurs features: filter, form, lightbox, sort, like button.`,
         techno: 'HTML5 / SCSS / Vanilla JS / ARIA / ESLint',
@@ -207,7 +207,7 @@ const projects = [
         sourcecode: 'https://github.com/Alphasud/CharlesDenneulin_6_18022021',
       },
       {
-        id: 'OC7',
+        id: '9',
         title: 'Les Petits Plats',
         description: `Intégration d'une maquette, et création d'un algorithme de recherche`,
         techno: 'HTML5 / SCSS / Vanilla JS / ESlint',
@@ -216,7 +216,7 @@ const projects = [
         sourcecode: 'https://github.com/Alphasud/CharlesDenneulin_7_24032021',
       },
       {
-        id: 'OC11',
+        id: '10',
         title: 'Kasa',
         description: `Intégration d'une maquette`,
         techno: 'HTML5 / SCSS / ReactJS / ReactRouter',
@@ -225,7 +225,7 @@ const projects = [
         sourcecode: 'https://github.com/Alphasud/CharlesDenneulin_11_17062021',
       },
       {
-        id: 'OC12',
+        id: '11',
         title: 'SportSee',
         description: `Intégration d'une maquette, construction de graphiques, données via API`,
         techno: 'HTML5 / SCSS / ReactJS / ReactRouter / Recharts',
@@ -234,13 +234,23 @@ const projects = [
         sourcecode: 'https://github.com/Alphasud/CharlesDenneulin_12_13072021',
       },
       {
-        id: 'OC13',
+        id: '12',
         title: 'Argent Bank',
         description: `Log in, log out, user profile, CRUD, API`,
         techno: 'HTML5 / CSS / ReactJS / ReactRouter / Redux',
         photo: './img/projet13.png',
         website: 'none',
         sourcecode: 'https://github.com/Alphasud/CharlesDenneulin_13_04092021',
+      },
+      {
+        id: '13',
+        title: 'HRnet',
+        description: `Auth, CRUD, API, Filters, Sorting, Search, Pagination, Datepicker`,
+        techno: 'HTML5 / CSS / ReactJS / Firebase',
+        photo: './img/projet14.png',
+        website: 'none',
+        website: 'https://hrnet.netlify.app/',
+        sourcecode: 'https://github.com/Alphasud/CharlesDenneulin_14_07102021',
       },
     ],
   },
@@ -265,7 +275,7 @@ const projects = [
         sourcecode: 'https://github.com/Alphasud/Natours',
       },
       {
-        id: 'canopee',
+        id: '2',
         title: `Canopée`,
         description: 'Mockup integration for three fake brands',
         techno: 'HTML5 / CSS / Bootstrap',
@@ -274,7 +284,7 @@ const projects = [
         sourcecode: 'https://github.com/Alphasud/Canopee/tree/gh-pages',
       },
       {
-        id: 'recipe',
+        id: '3',
         title: `Recipe Finder`,
         description: `App that fetches recipe from an API`,
         techno: 'HTML5 / CSS / ReactJS / Edamam API',
@@ -283,7 +293,7 @@ const projects = [
         sourcecode: 'https://github.com/Alphasud/recipe-app',
       },
       {
-        id: 'ghibli',
+        id: '4',
         title: `Ghibli Studio Database`,
         description: `Random stuff about the Ghibli movies`,
         techno: 'HTML5 / CSS / ReactJS / Ghibli API',
@@ -292,7 +302,7 @@ const projects = [
         sourcecode: 'https://github.com/Alphasud/Ghibli-Movie-Database',
       },
       {
-        id: 'OC2',
+        id: '5',
         title: 'Reservia',
         description: `Mockup integration`,
         techno: 'HTML5 / CSS',
@@ -301,7 +311,7 @@ const projects = [
         sourcecode: 'https://github.com/Alphasud/CharlesDenneulin_2_12012021',
       },
       {
-        id: 'OC3',
+        id: '6',
         title: 'ohmyfood',
         description: `Mockup integration, CSS animations`,
         techno: 'HTML5 / SCSS',
@@ -311,7 +321,7 @@ const projects = [
         sourcecode: 'https://github.com/Alphasud/CharlesDenneulin_3_27012021',
       },
       {
-        id: 'OC4',
+        id: '7',
         title: 'GameOn',
         description: `Mockup integration and form validation`,
         techno: 'HTML5 / SCSS / Vanilla JS',
@@ -320,7 +330,7 @@ const projects = [
         sourcecode: 'https://github.com/Alphasud/GameOn-website-FR',
       },
       {
-        id: 'OC6',
+        id: '8',
         title: 'FishEye',
         description: `Mockup integration, accessibility (aria),  several features: filter, form, lightbox, sort, like button.`,
         techno: 'HTML5 / SCSS / Vanilla JS / ARIA / ESLint',
@@ -329,7 +339,7 @@ const projects = [
         sourcecode: 'https://github.com/Alphasud/CharlesDenneulin_6_18022021',
       },
       {
-        id: 'OC7',
+        id: '9',
         title: 'Les Petits Plats',
         description: `Mockup integration and creation of a search algorithm`,
         techno: 'HTML5 / SCSS / Vanilla JS / ESlint',
@@ -338,7 +348,7 @@ const projects = [
         sourcecode: 'https://github.com/Alphasud/CharlesDenneulin_7_24032021',
       },
       {
-        id: 'OC11',
+        id: '10',
         title: 'Kasa',
         description: `Mockup integration`,
         techno: 'HTML5 / SCSS / ReactJS / ReactRouter',
@@ -347,7 +357,7 @@ const projects = [
         sourcecode: 'https://github.com/Alphasud/CharlesDenneulin_11_17062021',
       },
       {
-        id: 'OC12',
+        id: '11',
         title: 'SportSee',
         description: `Mockup integration, graphic charts, data fetched from API`,
         techno: 'HTML5 / SCSS / ReactJS / ReactRouter / Recharts',
@@ -356,13 +366,23 @@ const projects = [
         sourcecode: 'https://github.com/Alphasud/CharlesDenneulin_12_13072021',
       },
       {
-        id: 'OC13',
+        id: '12',
         title: 'Argent Bank',
         description: `Log in, log out, user profile, CRUD, API`,
         techno: 'HTML5 / CSS / ReactJS / ReactRouter / Redux',
         photo: './img/projet13.png',
         website: 'none',
         sourcecode: 'https://github.com/Alphasud/CharlesDenneulin_13_04092021',
+      },
+      {
+        id: '13',
+        title: 'HRnet',
+        description: `Auth, CRUD, API, Filters, Sorting, Search, Pagination, Datepicker`,
+        techno: 'HTML5 / CSS / ReactJS / Firebase',
+        photo: './img/projet14.png',
+        website: 'none',
+        website: 'https://hrnet.netlify.app/',
+        sourcecode: 'https://github.com/Alphasud/CharlesDenneulin_14_07102021',
       },
     ],
   },
@@ -387,7 +407,7 @@ const projects = [
         sourcecode: 'https://github.com/Alphasud/Natours',
       },
       {
-        id: 'canopee',
+        id: '2',
         title: `Canopée`,
         description: 'Integración de diseños para 3 marquas ficticias',
         techno: 'HTML5 / CSS / Bootstrap',
@@ -396,7 +416,7 @@ const projects = [
         sourcecode: 'https://github.com/Alphasud/Canopee/tree/gh-pages',
       },
       {
-        id: 'recipe',
+        id: '3',
         title: `Recipe Finder`,
         description: `App para buscar recetas`,
         techno: 'HTML5 / CSS / ReactJS / Edamam API',
@@ -405,7 +425,7 @@ const projects = [
         sourcecode: 'https://github.com/Alphasud/recipe-app',
       },
       {
-        id: 'ghibli',
+        id: '4',
         title: `Ghibli Studio Database`,
         description: `Cosas sobre las peliculas Ghibli`,
         techno: 'HTML5 / CSS / ReactJS / Ghibli API',
@@ -414,7 +434,7 @@ const projects = [
         sourcecode: 'https://github.com/Alphasud/Ghibli-Movie-Database',
       },
       {
-        id: '2',
+        id: '5',
         title: 'Reservia',
         description: `Integración de un diseño de página web`,
         techno: 'HTML5 / CSS',
@@ -423,7 +443,7 @@ const projects = [
         sourcecode: 'https://github.com/Alphasud/CharlesDenneulin_2_12012021',
       },
       {
-        id: '3',
+        id: '6',
         title: 'ohmyfood',
         description: `Integración de un diseño de página web`,
         techno: 'HTML5 / SCSS',
@@ -433,7 +453,7 @@ const projects = [
         sourcecode: 'https://github.com/Alphasud/CharlesDenneulin_3_27012021',
       },
       {
-        id: '4',
+        id: '7',
         title: 'GameOn',
         description: `Integración de un diseño de página web y validación de un formulario`,
         techno: 'HTML5 / SCSS / Vanilla JS',
@@ -442,7 +462,7 @@ const projects = [
         sourcecode: 'https://github.com/Alphasud/GameOn-website-FR',
       },
       {
-        id: '6',
+        id: '8',
         title: 'FishEye',
         description: `Integración de un diseño, accesibilidad (aria),  varios features: filter, form, lightbox, sort, botón de like.`,
         techno: 'HTML5 / SCSS / Vanilla JS / ARIA / ESLint',
@@ -451,7 +471,7 @@ const projects = [
         sourcecode: 'https://github.com/Alphasud/CharlesDenneulin_6_18022021',
       },
       {
-        id: '7',
+        id: '9',
         title: 'Les Petits Plats',
         description: `Integración de un diseño, y algoritmo de búsqueda`,
         techno: 'HTML5 / SCSS / Vanilla JS / ESlint',
@@ -460,7 +480,7 @@ const projects = [
         sourcecode: 'https://github.com/Alphasud/CharlesDenneulin_7_24032021',
       },
       {
-        id: '11',
+        id: '10',
         title: 'Kasa',
         description: `Integración de un diseño de página web`,
         techno: 'HTML5 / SCSS / ReactJS / ReactRouter',
@@ -469,7 +489,7 @@ const projects = [
         sourcecode: 'https://github.com/Alphasud/CharlesDenneulin_11_17062021',
       },
       {
-        id: '12',
+        id: '11',
         title: 'SportSee',
         description: `Integración de un diseño, gráficos, datos de API`,
         techno: 'HTML5 / SCSS / ReactJS / ReactRouter / Recharts',
@@ -478,13 +498,23 @@ const projects = [
         sourcecode: 'https://github.com/Alphasud/CharlesDenneulin_12_13072021',
       },
       {
-        id: 'OC13',
+        id: '12',
         title: 'Argent Bank',
         description: `Log in, log out, user profile, CRUD, API`,
         techno: 'HTML5 / CSS / ReactJS / ReactRouter / Redux',
         photo: './img/projet13.png',
         website: 'none',
         sourcecode: 'https://github.com/Alphasud/CharlesDenneulin_13_04092021',
+      },
+      {
+        id: '13',
+        title: 'HRnet',
+        description: `Auth, CRUD, API, Filters, Sorting, Search, Pagination, Datepicker`,
+        techno: 'HTML5 / CSS / ReactJS / Firebase',
+        photo: './img/projet14.png',
+        website: 'none',
+        website: 'https://hrnet.netlify.app/',
+        sourcecode: 'https://github.com/Alphasud/CharlesDenneulin_14_07102021',
       },
     ],
   },
